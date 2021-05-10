@@ -50,7 +50,9 @@ def do_logout():
     """Logout user."""
 
     if CURR_USER_KEY in session:
+
         del session[CURR_USER_KEY]
+        flash(f"Logout Successful","success")
     
     return redirect('/login')
 
