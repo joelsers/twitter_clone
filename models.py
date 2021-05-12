@@ -149,6 +149,7 @@ class User(db.Model):
         db.session.add(user)
         return user
 
+
     @classmethod
     def authenticate(cls, username, password):
         """Find user with `username` and `password`.
